@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--直接给定一个事件-->
+<h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
+<!--给一个事件函数.然后通过调用函数来执行-->
+<h1 id="b" onclick="fn()">请点击该文本</h1>
+<!--通过this来传递其id  this代表当前元素id-->
+<h1 id="b2" onclick="changeText(this)">请点击该文本</h1>
+
+</body>
+<script>
+    function fn() {
+
+        document.getElementById("b").innerHTML="谢谢!";
+    };
+
+    function changeText(id) {
+        id.innerHTML="谢谢!";
+    }
+</script>
+</html>
