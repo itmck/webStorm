@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p">123</p>
+
+<button id="btn" onclick="btn()">点我</button>
+
+</body>
+<script>
+
+    person =new Object();
+    person.name="苗常克";
+    person.age=24;
+    function btn(){
+
+        //innerHTML 改变内容
+        document.getElementById("p").innerHTML="我叫"+person.name+" 我现在:"+person.age+"岁";
+        //document.getElementById(id).style.property=new style  改变样式
+        document.getElementById("p").style.color="red";
+        document.getElementById("p2").innerHTML=sum(10,10);//调用了sum(a,b)函数
+    }
+
+
+    //声明一个函数带有返回值
+    function sum(a,b) {
+
+        return a+b;
+
+    }
+
+</script>
+</html>
